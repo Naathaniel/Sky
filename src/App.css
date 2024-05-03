@@ -1,38 +1,579 @@
-.App {
-  text-align: center;
+* { margin: 0; padding: 0; }
+
+body {
+  font-family: 'Poppins', sans-serif; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* navvvvvv */
+
+.logogo{
+  padding: 0% 10px 0 0%;
+  height: 75px;
+  /* border: 1px solid red; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar{
+  box-shadow: -5px 4px 16px rgba(0, 0, 0, 0.1);
+  /* border: 1px solid blue; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navvv{
+  /* border: 1px solid red; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: end;
+  width: 100%;
+
+}
+
+.navvv a {
+  color: #4268AE;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navvv a:hover {
+  color: #FFD9AB;
+}
+
+.navvv a:active {
+  color: #FFA437;
+}
+
+.navtext {
+  color: #4268AE;
+  font-weight: 500;
+  /* border: 1px solid yellow; */
+  margin-right:  15px;
+}
+
+
+
+ /* @media screen and (max-width: 1195px){.navbar{justify-content: space-between; padding-left: 2%;}
+ .number{ margin: 0; width: auto;}}
+ @media screen and (max-width: 1120px){.navvv{padding-right: 34%; font-size: 14px;}}
+ @media screen and (max-width: 994px){
+.number{width: 55vw;}.navvv{border: solid 0.1px rgb(94, 94, 94);}
+.navtog{border-style: solid;}.submainnav{flex-direction: row; margin-bottom: 3%;}}
+@media screen and (max-width: 600px){.number h4{font-size: 17px;}.number p{font-size: 13px;}}
+@media screen and (max-width: 449px){.submainnav{flex-direction: column;}.number{display: none;}
+.logogo{height: 55px; margin: 3%;}.navbar{margin: 1% 5%;}} */
+ 
+
+
+ /* First Section */
+
+.fsMain{
+  background-image: url('../public/images/9.png');
+  background-size: cover;
+  background-position: top;
+  height: 60vh;
+  /* border: solid 1px red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.conthero{
+  /* border: 1px solid green; */
+  text-align: start;
+  padding: 0 0 5% 10%;
+}
+
+/* .contlogo{
+  border: 1px solid yellow;
+} */
+
+.sampsubt{
+  font-weight: 700;
+  font-size: 52px;
+  color: white;
+  /* border: solid 1px blue; */
+} 
+
+.samppara{
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+  padding: 2% 0 5% 0;
+  /* border: solid 1px red; */
+}
+
+/* .imgcont{
+  border: solid 1px red;;
+} */
+
+
+@media screen and (max-width: 850px){.conthero{padding: 0 0 1% 4%;}.sampsubt{font-size: 40px;}.samppara{font-size: 15px;}.imgcont{height: 300px;}}
+@media screen and (max-width: 650px){.fsMain{display: flex; width: 100%; flex-direction: column;}.imgcont{height: 187px;}.conthero{padding: 15% 8% 0 0;}.samppara{padding: 0;}}
+@media screen and (max-width: 630px){.sampsubt {font-weight: 500; font-size: 35px;}.samppara{font-size: 14px;}.conthero{padding: 15%  5% 0 2%;}}
+@media screen and (max-width: 510px){.imgcont{height: 100px;}}
+@media screen and (max-width: 450px){.samppara{padding-right: 20%;}.conthero{padding: 15%  5% 0 4%;}}
+
+.bodymarg{
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+/* -------------------- 2nd --------------- */
+
+.secsec{
+  display: flex;
+  /* border: 1px solid violet; */
+  padding: 2%;
+}
+
+.left22{
+  /* border: 1px solid red; */
+  width: 46%;
+  padding: 4% 2% 4% 10%;
+
+  animation: fadeInLeft; /* animate__fadeInLeft */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  
+}
+
+.left22 h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.left22 h5 {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.left22 p {
+  font-size: 15px;
+  font-weight: 400;
+}
+.right22{
+  /* border: 1px solid blue; */
+  animation: fadeInRight; 
+  animation-duration: 2s;
+  width: 50%;
+  padding-top: 2%;
+}
+
+@media screen and (max-width: 1530px){.left22{padding: 4% 2% 4% 2%;}.left22 h2{font-size: 22px;}.left22 p{font-size: 15px;}}
+@media screen and (max-width: 1300px){.left22{padding: 4% 2% 4% 2%;}.secsec{flex-direction: column;}.left22{width: 100%;}.right22{width: 100%; justify-content: center; display: flex;}}
+@media screen and (max-width: 650px){.rightimg{height: 300px;}}
+@media screen and (max-width: 380px){.rightimg{height: 200px;}}
+
+/* -------------------- 2 CATEGORIES --------------- */
+.categtitle{
+  /* border: 1px solid blue; */
+  text-align: center;
+  padding: 2% 0 2% 0;
+  animation: fadeInDown; /* fadeInRight fadeInDown fadeInUp */
+  animation-duration: 1.5s;
+  animation-delay: 0.9s;
+}
+
+.categtitle h2{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.categtitle p{
+  font-size: 16px;
+  padding: 4px 12% 0 12%;
+  font-weight: 400;
+}
+
+.categ{
+  /* border: 1px solid red; */
+  display: flex;
+  padding: 0 8% 4% 8%;
+  justify-content: space-between;
+}
+
+.categ h3{
+  font-size: 23px;
+  padding-top: 4%;
+}
+.categ1 p{
+  font-size: 15px;
+  padding: 0 3% 0 3%;
+  font-weight: 300;
+  /* border: solid 1px violet; */
+  margin: 0 5% 3% 5%;
+  line-height: 20px;
+}
+.categ2 p{
+  font-size: 15px;
+  padding: 0 3% 0 3%;
+  font-weight: 300;
+  /* border: solid 1px violet; */
+  margin: 0 5% 6% 5%;
+  line-height: 20px;
+}
+
+.categ1{
+  text-align: center;
+  /* border: 1px solid yellow; */
+  width: 50%;
+  animation: fadeInLeft; /* fadeInRight fadeInDown fadeInUp */
+  animation-duration: 1.5s;
+  animation-delay: 0.9s;
+}
+.categ1 button{
+  background-color: #FFD9AB;
+  font-size: 14px;
+  padding: 1% 2% 1% 2%;
+}
+
+.categ2{
+  text-align: center;
+  /* border: 1px solid green; */
+  width: 50%;
+  animation: fadeInRight; /* fadeInRight fadeInDown fadeInUp */
+  animation-duration: 1.5s;
+  animation-delay: 0.9s;
+}
+
+.btnlearn1{
+  background-color: #4268AE;
+  font-size: 14px;
+  padding: 8px 22px 8px 22px;
+  color: white;
+  text-decoration: none;
+}
+
+.btnlearn2{
+  background-color: #4268AE;
+  font-size: 14px;
+  padding: 8px 22px 8px 22px;
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1590px){.cagimg{height: 280px;}}
+@media screen and (max-width: 1400px){.categ{padding: 0 5% 4% 5%;}}
+@media screen and (max-width: 1350px){.cagimg{height: 260px;}}
+@media screen and (max-width: 1250px){.cagimg{height: 240px;}.categ h3{font-size: 20px; font-weight: 500;}.categ p{font-size: 14px;}}
+@media screen and (max-width: 1180px){.categ{flex-direction: column; justify-content: center;}.cagimg{height: 350px;}.categ2{padding-top: 8%; width: 100%;}.categ p{font-size: 15px; padding: 0 8%;} .categ1{width: 100%;}.categ{padding: 0 1px 4% 1px;}}
+@media screen and (max-width: 830px){.categ{padding: 0 0;}}
+@media screen and (max-width: 730px){.cagimg{height: 300px;}}
+@media screen and (max-width: 624px){.cagimg{height: 240px;}.categtitle h2{font-size: 23px; font-weight: 600; padding: 5% 0 0 0;}.categtitle p{font-size: 15px; padding: 1% 2px 1% 2px ;}.pinakacateg{padding: 0; margin: 0;}}
+@media screen and (max-width: 480px){.categ p{padding: 0 0 2% 0;}.cagimg{height: 180px;}}
+@media screen and (max-width: 355px){.cagimg{height: 167px;}}
+
+/* ------------------------banner--------------------------------- */
+
+.bgbanns{
+  background-image: url('../public/images/banners.png');
+  background-size: cover;
+  background-position: top;
+  height: auto;
+  padding: 3% 2% 3% 2%;
+  /* border: 1px solid pink; */
+  animation: fadeInUp; /* fadeInRight fadeInDown fadeInUp */
+  animation-duration: 1.5s;
+  animation-delay: 0.9s;
+}
+
+.bancomp{
+  line-height: 100%;
+}
+.cndlogo{
+  /* border: 1px solid red; */
+  justify-content: start;
+  display: flex;
+  padding-left: 5%;
+  margin-bottom: -2%;
+}
+
+.categtitle11{
+  /* border: 1px solid blue; */
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.categtitle11 h2{
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.categtitle11 p{
+  font-size: 16px;
+  font-weight: 400;
+  /* border: 1px solid blueviolet; */
 }
+
+.contban{
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 1%;
+}
+.contban1{
+  /* border: 1px solid green; */
+  background-color: white;
+  width: 48%;
+  padding: 2% 2% 1% 2%;
+  border-radius: 2px;
+}
+.contban1 h2{
+  font-size: 22px;
+  font-weight: 600;
+  color: #F20D0D;
+}
+.contban1 h5{
+  font-size: 15px;
+}
+.contban1 h6{
+  font-size: 15px;
+  font-weight: 600;
+}
+.contban1 ul li{
+  font-size: 13px;
+}
+.contban1 p{
+  font-size: 13px;
+}
+.ban1{
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background-color: white;
+  color: #F20D0D;
+  border-color: #F20D0D
+}
+.ban2b{
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background-color: white;
+  color: #4268AE;
+  border-color: #4268AE
+}
+.ban2{
+  color: #4268AE;
+  border-color: #4268AE;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1000px){.contban{flex-direction: column;}.contban1{width: 100%; margin-top: 2%;}.cndlogo{padding-left: 0; margin-bottom: 0;}}
+@media screen and (max-width: 830px){.bgbanns{margin-top: 6%;}.categtitle11 h2{font-size: 21px;}.categtitle11 p{font-size: 15px; padding: 0 2%;}.categtitle11{line-height: 15px; margin: 0;}.contban1{padding: 5%;}}
+@media screen and (max-width: 500px){.contban1 h2{font-size: 20px;}.contban1{padding: 6%;}}
+@media screen and (max-width: 350px){.contban1 h2{font-size: 18px;}}
+@media screen and (max-width: 500px){.ban2{font-size: 20px;}}
+@media screen and (max-width: 350px){.ban2{font-size: 18px;}}
+@media screen and (max-width: 1154px){.contban1{padding: 3%;}}
+@media screen and (max-width: 1154px){.contban1{padding: 3%;}}
+
+
+/* -------------------- PRICE PLAN ----------------------------------- */
+
+.plantitle{
+  /* border: solid 1px blue; */
+  text-align: center;
+  padding: 2% 12% 3% 12%;
+  animation: fadeInDown; /* fadeInRight fadeInDown fadeInUp */
+  animation-duration: 1.5s;
+  animation-delay: 0.9s;
+}
+
+.plantitle h3{
+  font-size: 24px;
+  font-weight: 600;
+  color: #3f3f3f;
+}
+
+.mainplan{
+  /* border: solid 1px yellow; */
+  padding: 2% 4% 5% 4%;
+}
+.plans{
+  /* border: solid 1px red; */
+  display: flex;
+  justify-content: center;
+}
+
+.plancont{
+  /* border: solid 1px red; */
+  line-height: 180%;
+  padding: 1% 1%; 
+}
+
+.plancont2{
+  /* border: solid 1px red; */
+  line-height: 100%;
+  padding: 1% 1%; 
+}
+
+.pricepara{
+  line-height: 130% !important;
+}
+.pricepara1{
+  line-height: 130% !important;
+}
+
+.strongp{
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.plans p {
+  font-size: 15px !important;
+}
+
+.colni{
+  display: flex;
+}
+
+.paraprice {
+  padding-bottom: 5%;
+}
+
+.colni p{
+  padding-left: 10px;
+}
+
+.plan1{
+  border: solid 1px #CDD8DF;
+  padding: 57px 3% 2% 3%;
+  width: 22%;
+  box-shadow: 10px 5px 0 #CDD8DF;
+  border-radius: 4px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInLeft; /* fadeInRight fadeInDown fadeInUp */
+  animation-duration: 1.5s;
+  animation-delay: 0.9s;
+}
+.plan2{
+  border: solid 1px #CDD8DF;
+  padding: 1% 3% 3% 3%;
+  margin: 0 3%;
+  width: 45%;
+  box-shadow: 10px 5px 0 #CDD8DF;
+  border-radius: 4px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInRight; /* fadeInRight fadeInDown fadeInUp */
+  animation-duration: 1.5s;
+  animation-delay: 0.9s;
+}
+
+.werepro{
+  display: flex;
+  margin-top: -8%;
+  margin-right: -19%;
+  margin-left: 16%;
+  height: 6%;
+}
+
+.spro{
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.wereco{
+  font-size: 23px;
+  color: white;
+  font-weight: 600;
+  padding: 2%;
+  width: 100%;
+  text-align: center;
+  background-color: #4268AE;
+}
+
+.promos{
+  height: 120px;
+  margin-top: -4%;
+}
+
+.plan1 h1{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.plan2 h1{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.plan1 h4{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.plan2 h4{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.plan1 p{
+  font-weight: 300;
+  color: #555555;
+}
+
+.plan2 p{
+  font-weight: 300;
+  color: #555555;
+}
+
+.plan1 h5{
+  font-size: 20px;
+  font-weight: 400;
+  color: #4268AE;
+}
+
+.plan2 h5{
+  font-size: 20px;
+  font-weight: 400;
+  color: #4268AE;
+}
+
+.colnilink {
+  padding-left: 5px;
+  color: #7194f4;
+  font-size: 13px;
+}
+
+.plan1 button{
+  font-size: 18px;
+  font-weight: 500;
+  padding: 3%;
+  color: white;
+  width: 100%;
+  background-color: #4268AE;
+  box-shadow: 5px 5px 0 rgb(0, 0, 0);
+  border-color: black;
+  border-style: none;
+}
+.plan2 button{
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  width: 100%;
+  background-color: #4268AE;
+  box-shadow: 5px 5px 0 rgb(0, 0, 0);
+  border-color: black;
+  border-style: none;
+}
+
+@media screen and (max-width: 1530px){.plan1{width: 35%;}.plan2{width: 50%;}}
+@media screen and (max-width: 1462px){.promos{height: 120px;}}
+@media screen and (max-width: 1215px){.plan1{width: 35%;}.plan2{width: 48%;}.promos{height: 100px;}}
+@media screen and (max-width: 1100px){.plan1{width: 80%;}.plan2{width: 80%;}.plans{flex-direction: column; align-items: center;}.plan1 button{padding: 1%;}.plan2{margin-top: 6%;}.werepro{margin-left: 5%;margin-right: -9%;}.promos{margin-top: 1%;}.plan1{padding: 40px 3% 2% 3%;}}
+@media screen and (max-width: 900px){.wereco{font-size: 19px;}.plan2 h2{font-size: 20px;}.plan1 h2{font-size: 20px;}.plan2 h4{font-size: 19px;}.plan1 h4{font-size: 19px;}.plan2 h3{font-size: 18px;}.plan1 h3{font-size: 18px;}.plan2 p{font-size: 14px;}.plan1 p{font-size: 14px;}}
+@media screen and (max-width: 850px){.plan1{width: 85%; margin: 2%;}.plan2{width: 85%;}.wereco{margin-top: -5%;}.plantitle{padding: 2% 4% 1px 4%;}.mainplan{padding: 4% 4% 5% 4%;}}
+@media screen and (max-width: 780px){.promos{margin-top: -2%;}.plan2{margin-top: 8%;}.spro{margin-right: 7%;}}
+@media screen and (max-width: 700px){.werepro{margin-left: 3%;margin-right: -13%; margin-top: -12%;}.spro{margin-right: 5%;}.plan1{width: 85%; padding: 5%;}.plan2{width: 85%; padding: 5%;}}
+@media screen and (max-width: 600px){.promos{height: 90px;}.werepro{margin-left: 3%;margin-right: -12%;}.spro{margin-right: 4%;}.plan1{width: 90%;}.plan2{width: 90%;}}
+@media screen and (max-width: 550px){.werepro{margin-left: 10%;margin-right: -12%;}.spro{margin-right: 3%;}}
+@media screen and (max-width: 490px){.werepro{margin-left: 10%;margin-right: -15%; margin-top: -15%;}.spro{margin-right: 3%;}.plan1{width: 100%; padding: 7%;}.plan2{width: 100%; padding: 7%;}}
