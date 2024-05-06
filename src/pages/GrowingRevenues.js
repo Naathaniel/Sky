@@ -8,10 +8,10 @@ export default function GrowingRevenues(){
    <>
       <div className="maingrow">
         <div className="leftgrow">
-        <h1>Growing Revenues <br/>
+        <h1>Growing Sales <br/>
         With ClearSky Software</h1>
         <h4>Our First step</h4>
-        <p>Prior to rolling out business solutions that Grow Revenues, it is imperative that we better understand your business. We would be considering the following:</p>
+        <p>Prior to rolling out business solutions that Grow <strong>SALES</strong>  , it is imperative that we better understand your business. We would be considering the following:</p>
         <li>SWOT Analysis, outlining Strengths, Weaknesses, Opportunities, and Threats.</li>
         <li>Online Presence, understand the business environment. </li>
         <li>Identify Competitors, direct and indirect competitors within your industry or niche.</li>
@@ -25,12 +25,12 @@ export default function GrowingRevenues(){
 
       <div className='AARRRtitle'>
           <h2>Moving Forward</h2>
-          <p>ClearSky Software process can be broken down into 5 components: Each component is unique, and with each component there will be programmatic and manual solutions. The exact composition of the component will come from the metrics and what defines "best results". The best process is ever changing and requires constant monitoring.</p>
+          <p>ClearSky Software process can be broken down into 5 components: Each component is unique, and with each component there will be programmatic and manual solutions. The exact composition of the component will come from the metrics and what defines <strong>"Best Results"</strong>.  The best process is ever changing and requires constant monitoring.</p>
       </div>
 
       <div className="AArrrcontent">
         <div>
-        <img className="aarrr" src="images/AARRR.png" height={400}></img>
+        <img className="aarrr" src="images/ARR.png" height={400}></img>
         </div>
       </div>
  

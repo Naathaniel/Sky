@@ -74,6 +74,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: end;
+  animation: fadeInDown; /* animate__fadeInLeft */
+  animation-duration: 2s; 
 }
 
 .conthero{
@@ -122,31 +124,31 @@ body {
 .secsec{
   display: flex;
   /* border: 1px solid violet; */
-  padding: 2%;
+  padding: 3% 1% 2% 1%;
 }
 
 .left22{
   /* border: 1px solid red; */
-  width: 46%;
-  padding: 4% 2% 4% 10%;
+  width: 50%;
+  padding: 3% 2% 4% 3%;
 
   animation: fadeInLeft; /* animate__fadeInLeft */
-  animation-duration: 2s; /* don't forget to set a duration! */
+  animation-duration: 2s; 
   
 }
 
 .left22 h2 {
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 700;
 }
 
 .left22 h5 {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 .left22 p {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
 }
 .right22{
@@ -154,7 +156,7 @@ body {
   animation: fadeInRight; 
   animation-duration: 2s;
   width: 50%;
-  padding-top: 2%;
+  padding-top: 5%;
 }
 
 @media screen and (max-width: 1530px){.left22{padding: 4% 2% 4% 2%;}.left22 h2{font-size: 22px;}.left22 p{font-size: 15px;}}
@@ -335,14 +337,21 @@ body {
 .contban1 p{
   font-size: 13px;
 }
-.ban1{
-  font-size: 13px;
-  padding: 4px 10px;
-  border-radius: 4px;
-  background-color: white;
+.notavail{
   color: #F20D0D;
-  border-color: #F20D0D
+  border: solid 3px #F20D0D;
+  text-align: center;
+  padding: 3%;
+  font-weight: 600;
+  font-size: 20px !important;
+  letter-spacing: 3px;
 }
+
+.NAQY{
+  padding-left: 2%;
+  color: #4268AE;
+}
+
 .ban2b{
   font-size: 13px;
   padding: 4px 10px;

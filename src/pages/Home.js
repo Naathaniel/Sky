@@ -23,16 +23,22 @@ export default function Home(){
       <div className='secsec' id="link">
         <div className='left22'>
           <h2>Who is ClearSky Software?</h2>
-          <p>ClearSky Software is a marketing tech company. Our process begins by analyzing your website and mobile site, social platforms, and communication methods. Once we have analyzed your customer touch points, we formulate a process on how best to implement optimum results,
-          Our goal is to grow your organizational profits through the use of our software and manual processes.</p>
+          <p>ClearSky Software is a  technology company. We specialize in developing and integrating software solutions that increase sales and or reduce operating costs.  We are focused on achieving measurable results  that improve the bottom line of your business. </p>
+          <h5>Our solutions will address three challenges</h5>
+          <ul>
+            <li>Attract more customers.</li>
+            <li>Customers will book more appointments or seek more quotes.</li>
+            <li>Optimize operational efficiency. Integrate technology when appropriate.</li>
+          </ul>
+          <p>At the end of the day it is our job of leveraging technology that will bring additional opportunities to your business, improve efficiency, and achieve more profit.</p>
 
           <h5>We understand Small Business</h5>
-          <p>All of our clients are small businesses and we understand our solutions have no room for error. Each business is unique and the solutions that are recommended will be based on the feedback to the goals of the business.</p>
+          <p>All of our clients are small businesses and we understand our solutions have no room for error. No two businesses are identical and the solutions that are recommended will be unique to your circumstance based on your input and expectations.</p>
 
-          <p>Once we understand your business challenges, we'll assess if we can help your business. We understand that our expertise may not always match your needs, but if your goals and our expertise aligns we will be committed to finding the best solutions.</p>
+          <p>Once we understand your business challenges, we'll assess if we can help your business. We understand that our expertise may not always match your needs, but if your goals and our expertise align we will be committed to delivering a solution that will meet with your goals. </p>
 
-          <h5>Accountability</h5>
-          <p>We become fully vested in our clients success and become an outsourced growth partner. When they succeed we succeed. as an example we will tie performance milestones to our revenue growth solutions.</p>
+          <h5>Our Promise</h5>
+          <p>We become fully vested in our clients' success and become a partner of your business. When we make a commitment to work with your business we will include performance based guarantees as part of our agreement. When you succeed we succeed. </p>
         </div>
         <div className='right22'>
           <img className='rightimg' src='./images/i_about_us.png' height={580}></img>
@@ -44,7 +50,7 @@ export default function Home(){
       <div className='pinakacateg'>
         <div className='categtitle' id="Services">
           <h2>How do we impact your business?  </h2>
-          <p> Our solutions focus on overcoming two business challenges. Growing Revenue, and Operating Efficiency.</p>
+          <p> Our solutions focus on,  Growing Revenue, and improving Operating Efficiency.</p>
         </div>
         <div className='categ'>
           <div className='categ1'>
@@ -93,12 +99,12 @@ export default function Home(){
             <p> <strong>Funded Work Placement</strong>
             You can receive up to $7,300 as a wage subsidy to hire a talented youth with the skills your business needs to achieve its digital adoption goals.</p>
             </div>
-            <button className='ban1'>BOOK AN APPOINTMENT</button>
+            <p className='notavail'>NO LONGER AVAILABLE</p>
           </div>
           <div className='contban1'>
           <h3 className='ban2'>Manufacturers/Contractors with Sales	&gt; $30,000 or 1+ Employee</h3>
           <div className='bancomp'>
-            <h6>Do I qualify?</h6>
+            <h6>Do I qualify? <strong className='NAQY'> (Not Available in Quebec and Yukon.)</strong> </h6>
             <h5>You Need the following 4 conditions:</h5>
             <ul>
               <li>Must be a for-profit business (including for-profit social enterprises and co-operatives) in Ontario</li>
